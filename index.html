@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Vo's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: white;
+        }
+        img {
+            width: 100%;
+            max-width: 1800px;
+            display: block;
+            margin: 20px auto;
+        }
+        .navigation {
+            position: fixed;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+        .nav-button {
+            background: white;
+            color: black;
+            border: 2px solid black;
+            padding: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            transition: all 0.3s;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-button:hover {
+            background: black;
+            color: white;
+        }
+        #return-to-portfolio {
+            color: black;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            padding: 15px 25px;
+            display: inline-block;
+            margin-bottom: 20px;
+            background: white;
+            border: 2px solid black;
+            transition: all 0.3s;
+        }
+        #return-to-portfolio:hover {
+            background: black;
+            color: white;
+        }
+        #scroll-to-top {
+            bottom: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://chilinhhovo.github.io/portfolio/" id="return-to-portfolio">← Return to Portfolio</a>
+    <div class="navigation" style="top: 20px;">
+    </div>
+    <div class="navigation" style="bottom: 20px;">
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="scroll-to-top" class="nav-button">↑</button>
+    </div>
+
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_01.jpg" alt="Portfolio Page 1">
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_02.jpg" alt="Portfolio Page 2">
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_03.jpg" alt="Portfolio Page 3">
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_04.jpg" alt="Portfolio Page 4">
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_05.jpg" alt="Portfolio Page 5">
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_06.jpg" alt="Portfolio Page 6">
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_07.jpg" alt="Portfolio Page 7">
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_08.jpg" alt="Portfolio Page 8">
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_09.jpg" alt="Portfolio Page 9">
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_10.jpg" alt="Portfolio Page 10">
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_11.jpg" alt="Portfolio Page 11">
+    <img src="images/Chi_Vo_Past_life_portfolio (1)_Page_12.jpg" alt="Portfolio Page 12">
+
+    <script>
+        // Show/hide scroll-to-top button based on scroll position
+        window.onscroll = function() {
+            const scrollButton = document.getElementById('scroll-to-top');
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
